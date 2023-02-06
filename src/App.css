@@ -131,6 +131,12 @@ header a:hover {
   color: #be0404;
 }
 
+.detail-close {
+  height: 16px;
+  width: 16px;
+  float: right;
+}
+
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: repeat(4, 1fr);

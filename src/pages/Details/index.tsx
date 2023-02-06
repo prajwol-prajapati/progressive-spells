@@ -1,8 +1,8 @@
 import { LoadingOutlined } from "@ant-design/icons";
 import { Divider } from "antd";
-import { useQuery } from "react-query";
-import { useParams } from "react-router-dom";
+import { CrossIcon } from "../../assets";
 import { TitleContainer } from "../../components";
+import { useParams, Link } from "react-router-dom";
 import { useSpellDetails } from "../../hooks/useSpellDetails";
 
 interface IDesc {
@@ -27,6 +27,9 @@ const Details = () => {
 
   return (
     <TitleContainer title={data?.name}>
+      <Link to='/'>
+        <CrossIcon className="detail-close" />
+      </Link>
       {isLoading ? (
         <div className="loader">
           <LoadingOutlined />
