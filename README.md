@@ -43,3 +43,4 @@ yarn install
 - [x] [Vite](https://vitejs.dev/)
 - [x] [Ant Design](https://ant.design/) Dependency (frontend library).
 - [x] react-query and axios.
+- [x] [View the project here](http://dragons-dungeons-spell.s3-website-us-east-1.amazonaws.com)
