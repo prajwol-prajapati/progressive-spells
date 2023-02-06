@@ -1,6 +1,6 @@
 # Progressive Spells
 
-- [Open project on our website](http://dragons-dungeons-spell.s3-website-us-east-1.amazonaws.com)
+- Find the web view of the project[here](http://dragons-dungeons-spell.s3-website-us-east-1.amazonaws.com)
 
 # Development
 
