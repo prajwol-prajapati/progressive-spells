@@ -13,7 +13,7 @@ interface IDesc {
 const Details = () => {
   const params = useParams();
 
-  const { data, isLoading } = useSpellDetails();
+  const { data, isLoading } = useSpellDetails(params);
 
   const Description = ({ name, description }: IDesc) => {
     return (
