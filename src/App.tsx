@@ -2,6 +2,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import "./App.css";
 import { ReactQueryDevtools } from "react-query/devtools";
 import { HomePage } from "./pages/Home";
+import { SpellsPage } from "./pages/Spells";
 import { Layout } from "./components";
 import { Route, Routes } from "react-router-dom";
 import React, { Suspense } from "react";
@@ -27,6 +28,7 @@ function App() {
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<HomePage />} />
+              <Route path="/spells" element={<SpellsPage />} />
               <Route path="/details/:id" element={<DetailsPage />} />
             </Route>
           </Routes>

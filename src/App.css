@@ -135,6 +135,20 @@ header a:hover {
   height: 16px;
   width: 16px;
   float: right;
+  cursor: pointer;
+}
+
+.add-favorite-spell {
+  padding: 10px 20px;
+  background: #08487df7;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.close-button-wrapper {
+  padding-bottom: 30px;
 }
 
 @media (max-width: 1024px) {

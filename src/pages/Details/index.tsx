@@ -2,7 +2,7 @@ import { LoadingOutlined } from "@ant-design/icons";
 import { Divider } from "antd";
 import { CrossIcon } from "../../assets";
 import { TitleContainer } from "../../components";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useSpellDetails } from "../../hooks/useSpellDetails";
 
 interface IDesc {
@@ -14,6 +14,11 @@ const Details = () => {
   const params = useParams();
 
   const { data, isLoading } = useSpellDetails(params);
+
+  let navigate = useNavigate();
+  const goToPreviousPath = () => {
+    navigate(-1);
+  }
 
   const Description = ({ name, description }: IDesc) => {
     return (
@@ -27,9 +32,9 @@ const Details = () => {
 
   return (
     <TitleContainer title={data?.name}>
-      <Link to='/'>
+      <span onClick={goToPreviousPath}>
         <CrossIcon className="detail-close" />
-      </Link>
+      </span>
       {isLoading ? (
         <div className="loader">
           <LoadingOutlined />
