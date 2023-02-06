@@ -1,4 +1,6 @@
-# Progressive Labs
+# Progressive Spells
+
+- [Open project on our website](http://dragons-dungeons-spell.s3-website-us-east-1.amazonaws.com)
 
 # Development
 
