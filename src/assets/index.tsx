@@ -1,5 +1,5 @@
 import React from 'react';
 
-import { ReactComponent as Cross } from './cross.svg';
+import Cross from './cross.svg';
 
-export const CrossIcon: React.FC<any> = (props) => <Cross {...props} />;
+export const CrossIcon: React.FC<any> = (props) => <img src={Cross} {...props} />;
